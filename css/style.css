@@ -4,6 +4,10 @@
   --primary-text-color: #373737;
   --secondary-bg-color: #bdbdbd;
   --primary-bg-color: white;
+  /* --sm: 640px;
+  --md: 768px;
+  --lg: 1024px;
+  --xl: 1280px; */
 }
 
 html {
@@ -13,29 +17,29 @@ html {
 }
 
 body {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   background-color: var(--primary-bg-color);
 }
 
 h1 {
-  font-size: 5.7rem;
+  font-size: 4rem;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 4.3rem;
+  font-size: 2.3rem;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 3.2rem;
+  font-size: 1.5rem;
   font-weight: 300;
 }
 
 /* Buttons */
 .btn {
-  padding: 1rem 2rem;
-  font-size: 2.4rem;
+  padding: 1.5rem 2.5rem;
+  font-size: 1.4rem;
   border: 0;
 }
 
@@ -47,4 +51,40 @@ h3 {
 .btn--black {
   background-color: black;
   color: white;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 6rem 1rem;
+}
+
+.hero__logo {
+  scale: 0.75;
+  margin-bottom: 2rem;
+}
+
+.hero__tagline {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 5.7rem;
+  }
+
+  .hero__tagline {
+    font-size: 2.3rem;
+  }
+
+  .hero_btn {
+    font-size: 2rem;
+  }
+}
+
+/* SELECTION */
+
+.selection {
+  padding: 2rem 1rem;
 }
