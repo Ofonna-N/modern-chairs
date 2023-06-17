@@ -88,3 +88,25 @@ h3 {
 .selection {
   padding: 2rem 1rem;
 }
+
+/* CARD */
+
+.card {
+  max-width: 30rem;
+  overflow: hidden;
+}
+
+.card__img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card__title {
+  font-weight: 700;
+}
+
+.card__count {
+  font-size: 4rem;
+  font-weight: 100;
+  margin: 0;
+}
