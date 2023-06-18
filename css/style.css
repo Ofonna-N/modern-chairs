@@ -367,6 +367,10 @@ h3 {
   .contact-us {
     padding-block: 16rem;
   }
+
+  .contact-us__btn:hover {
+    color: #3c3a47;
+  }
 }
 
 /* #endregion */
