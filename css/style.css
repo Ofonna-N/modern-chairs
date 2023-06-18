@@ -265,3 +265,10 @@ h3 {
   }
 }
 /* #endregion */
+
+/* #region FOOTER */
+.footer {
+  padding-block: 3.5rem;
+  text-align: center;
+}
+/* #endregion */
