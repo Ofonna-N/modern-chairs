@@ -12,7 +12,11 @@
   --lg: 1024px;
   --xl: 1280px; */
 }
-
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 html {
   font-size: 62.5%;
   color: var(--primary-text-color);
@@ -53,6 +57,8 @@ h3 {
   padding: 1.5rem 2.5rem;
   font-size: 1.4rem;
   border: 0;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .btn--gray {
@@ -68,11 +74,26 @@ h3 {
 .btn--brown-outline {
   background-color: transparent;
   border: 1px solid var(--bg-brown);
+  color: var(--bg-brown);
+  transition: color 0.3s;
+  transition: background-color 0.3s;
 }
+
+.btn--brown-outline:hover {
+  background-color: var(--bg-brown);
+  color: white;
+}
+
 .btn--white-outline {
   background-color: transparent;
   border: 1px solid white;
   color: white;
+  transition: all 0.3s;
+}
+
+.btn--white-outline:hover {
+  background-color: white;
+  color: var(--bg-brown);
 }
 /* #endregion */
 
@@ -89,20 +110,24 @@ h3 {
 
 .hero__tagline {
   font-size: 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
 }
 
 @media screen and (min-width: 768px) {
+  .hero {
+    padding-block: 30rem;
+  }
   .hero__title {
     font-size: 5.7rem;
   }
 
   .hero__tagline {
     font-size: 2.3rem;
+    margin-bottom: 10rem;
   }
 
   .hero_btn {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
 /* #endregion */
@@ -110,7 +135,7 @@ h3 {
 /* #region SELECTION */
 
 .selection {
-  padding: 10rem 1rem;
+  padding: 10rem 5rem;
   text-align: center;
 }
 
@@ -144,6 +169,12 @@ h3 {
 .card {
   max-width: 30rem;
   overflow: hidden;
+  transition: scale 0.15s;
+  cursor: pointer;
+}
+
+.card:hover {
+  scale: 1.035;
 }
 
 .card__img {
@@ -220,7 +251,7 @@ h3 {
 
 /* #region VISIT SECTION */
 .visit-section {
-  padding: 15rem 5rem;
+  padding: 5rem 5rem;
   text-align: center;
 }
 
@@ -251,6 +282,10 @@ h3 {
 }
 
 @media screen and (min-width: 768px) {
+  .visit-section {
+    padding-block: 15rem;
+  }
+
   .visit-section__number {
     font-size: 5rem;
   }
@@ -271,4 +306,67 @@ h3 {
   padding-block: 3.5rem;
   text-align: center;
 }
+/* #endregion */
+
+/* #region CONTACT US */
+.contact-us {
+  padding: 10rem 2rem;
+}
+
+.contact-us--grayish-blue {
+  background-color: #3c3a47;
+  color: white;
+}
+
+.contact-us__title {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.contact-us__cta {
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contact-us_form {
+  max-width: 640px;
+  margin-inline: auto;
+}
+
+.contact-us__form-input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  font-weight: 100;
+  gap: 0.25rem;
+}
+.contact-us__form-input-container > :is(input, textarea) {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contact-us__form-input-container > input {
+  padding-top: 1rem;
+  padding-bottom: 0.25rem;
+  color: white;
+}
+.contact-us__form-input-container > label {
+  text-transform: uppercase;
+}
+.contact-us__btn {
+  width: 100%;
+}
+
+.contact-us__text {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-us {
+    padding-block: 16rem;
+  }
+}
+
 /* #endregion */
