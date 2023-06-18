@@ -59,6 +59,9 @@ h3 {
   border: 0;
   font-weight: bold;
   cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
 }
 
 .btn--gray {
