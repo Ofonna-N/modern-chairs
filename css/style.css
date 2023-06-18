@@ -1,9 +1,12 @@
 @import "./normalize.css";
 
+/* #region BASE */
 :root {
   --primary-text-color: #373737;
   --secondary-bg-color: #bdbdbd;
   --primary-bg-color: white;
+  --bg-brown: #9f7657;
+
   /* --sm: 640px;
   --md: 768px;
   --lg: 1024px;
@@ -36,7 +39,16 @@ h3 {
   font-weight: 300;
 }
 
-/* Buttons */
+/* #endregion */
+
+/* #region CONTAINER */
+.block {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+/* #endregion */
+
+/* #region BUTTONS */
 .btn {
   padding: 1.5rem 2.5rem;
   font-size: 1.4rem;
@@ -53,7 +65,13 @@ h3 {
   color: white;
 }
 
-/* Hero */
+.btn--brown-outline {
+  background-color: transparent;
+  border: 1px solid var(--bg-brown);
+}
+/* #endregion */
+
+/* #region Hero */
 .hero {
   text-align: center;
   padding: 6rem 1rem;
@@ -82,15 +100,42 @@ h3 {
     font-size: 2rem;
   }
 }
+/* #endregion */
 
-/* SELECTION */
+/* #region SELECTION */
 
 .selection {
-  padding: 2rem 1rem;
+  padding: 10rem 1rem;
+  text-align: center;
 }
 
-/* CARD */
+.selection--light-gray {
+  background-color: #eff0ea;
+}
 
+.selection__title {
+  font-size: 1.3rem;
+}
+
+.selection__tag {
+  font-size: 2.5rem;
+}
+
+.selection__text {
+  margin-inline: auto;
+  margin-bottom: 5rem;
+  max-width: 60rem;
+}
+
+@media screen and (min-width: 640px) {
+  .selection .card {
+    text-align: left;
+  }
+}
+
+/* #endregion */
+
+/* #region CARD */
 .card {
   max-width: 30rem;
   overflow: hidden;
@@ -108,5 +153,33 @@ h3 {
 .card__count {
   font-size: 4rem;
   font-weight: 100;
+  opacity: 0.6;
   margin: 0;
 }
+/* #endregion */
+
+/* #region GRID */
+
+.grid {
+  display: grid;
+  gap: 2rem 7rem;
+}
+
+.grid--inline {
+  display: inline-grid;
+  display: -ms-inline-grid;
+  display: -moz-inline-grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--col3x {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--col3x {
+    grid-template-columns: auto auto auto;
+  }
+}
+/* #endregion */
