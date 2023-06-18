@@ -217,3 +217,51 @@ h3 {
   }
 }
 /* #endregion */
+
+/* #region VISIT SECTION */
+.visit-section {
+  padding: 15rem 5rem;
+  text-align: center;
+}
+
+.visit-section__title {
+  font-weight: 100;
+}
+
+.visit-section__number {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.visit-section__text {
+  margin-bottom: 4rem;
+}
+
+.visit-section__logos {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.visit-section__logo > svg {
+  /* scale: 0.1; */
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .visit-section__number {
+    font-size: 5rem;
+  }
+
+  .visit-section__text {
+    font-size: 1.8rem;
+    margin-bottom: 6rem;
+  }
+
+  .visit-section__logo > svg {
+    scale: 1.5;
+  }
+}
+/* #endregion */
