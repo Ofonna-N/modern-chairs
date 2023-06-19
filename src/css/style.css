@@ -107,7 +107,7 @@ h3 {
 }
 
 .hero__logo {
-  scale: 0.75;
+  transform: scale(0.75);
   margin-bottom: 2rem;
 }
 
@@ -172,12 +172,12 @@ h3 {
 .card {
   max-width: 30rem;
   overflow: hidden;
-  transition: scale 0.15s ease;
+  transition: transform 0.15s ease;
   cursor: pointer;
 }
 
 .card:hover {
-  scale: 1.035;
+  transform: scale(1.035);
 }
 
 .card__img {
@@ -206,8 +206,6 @@ h3 {
 
 .grid--inline {
   display: inline-grid;
-  display: -ms-inline-grid;
-  display: -moz-inline-grid;
 }
 
 @media screen and (min-width: 768px) {
@@ -299,7 +297,7 @@ h3 {
   }
 
   .visit-section__logo > svg {
-    scale: 1.5;
+    transform: scale(1.5);
   }
 }
 /* #endregion */
