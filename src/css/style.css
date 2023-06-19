@@ -100,10 +100,10 @@ h3 {
 }
 /* #endregion */
 
-/* #region Hero */
+/* #region HERO */
 .hero {
   text-align: center;
-  padding: 6rem 1rem;
+  padding: 12rem 1rem;
 }
 
 .hero__logo {
@@ -172,7 +172,7 @@ h3 {
 .card {
   max-width: 30rem;
   overflow: hidden;
-  transition: scale 0.15s;
+  transition: scale 0.15s ease;
   cursor: pointer;
 }
 
